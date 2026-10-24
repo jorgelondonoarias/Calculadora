@@ -1,0 +1,139 @@
+﻿<Window x:Class="CalculadoraCientifica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculadoraCientifica"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="598" Width="347">
+    <Grid Background="#FFA7A7A7">
+        <Grid.RowDefinitions>
+            <RowDefinition>
+
+            </RowDefinition>
+            <RowDefinition>
+
+            </RowDefinition>
+            <RowDefinition>
+
+            </RowDefinition>
+            <RowDefinition>
+
+            </RowDefinition>
+            <RowDefinition>
+
+            </RowDefinition>
+            <RowDefinition>
+
+            </RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="txtResultado" Background="#FFC0CAD5" Grid.ColumnSpan="4" Text="0" Height="50" Width="270" FontWeight="Bold" FontSize="36" IsReadOnly="True" TextAlignment="Right" ></TextBox>
+
+        <Border Background="#FF323232" Grid.Row="1" HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnLimpiar" Content="C" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnPorcentaje" Content="%" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="1" Grid.Column="2"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btbExponente" Content="**" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="1" Grid.Column="3"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnDivision" Content="/" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="2" Grid.Column="0"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btbSiete" Content="7" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="2" Grid.Column="1"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btbOcho" Content="8" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="2" Grid.Column="2"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnNueve" Content="9" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="2" Grid.Column="3"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnMulti" Content="*" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="3"  Grid.Column="0" HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnCuatro" Content="4" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="3" Grid.Column="1"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnCinco" Content="5" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="3" Grid.Column="2"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnSeis" Content="6" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="3" Grid.Column="3"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnResta" Content="-" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="4" Grid.Column="0"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnUno" Content="1" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="4" Grid.Column="1"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnDos" Content="2" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="4" Grid.Column="2"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnTres" Content="3" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="4" Grid.Column="3"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnMas" Content="+" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="5" Grid.Column="0"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnConversion" Content="+/-" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="5" Grid.Column="1"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnCero" Content="0" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="5" Grid.Column="2"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnComa" Content="," BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+        <Border Background="#FF323232" Grid.Row="5" Grid.Column="3"  HorizontalAlignment="Stretch" ClipToBounds="True" VerticalAlignment="Stretch" CornerRadius="10,10,10,10" Width="60" Height="60">
+            <Button x:Name="btnIgual" Content="=" BorderThickness="0" Background="Transparent" FontSize="16" FontWeight="Bold" Click="Btn_Click">
+
+            </Button>
+        </Border>
+    </Grid>
+</Window>
